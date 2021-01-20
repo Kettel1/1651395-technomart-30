@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Андрей Коровин](https://up.htmlacademy.ru/htmlcss/30/user/1651395).
-* Наставник: `[Дмитрий Гуляев] (https://htmlacademy.ru/profile/id87930)`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/id87930).
 
 ---
 
