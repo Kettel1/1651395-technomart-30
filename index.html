@@ -19,18 +19,15 @@
     </section>
 
     <section>
-      <article>
-        <p>Интернет-магазин<br>Строительных материалов<br>и инструментов для ремнота</p>
-      </article>
-      <article>
+      <p>Интернет-магазин<br>Строительных материалов<br>и инструментов для ремнота</p>
+      <div>
         <a href='+78125550555'>+7(812)555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </article>
-
-      <article>
+      </div>
+      <div>
         <button>Войти</button>
         <button>Регистрация</button>
-      </article>
+      </div>
     </section>
 
     <nav>
@@ -100,10 +97,10 @@
 
     <section>
 
-      <article>
+      <div>
         <h2>Популярные товары</h2>
         <a>Все популярные товары</a>
-      </article>
+      </div>
 
       <ul>
         <li>
@@ -215,23 +212,46 @@
       </section>
 
       <section>
-        <article>
-          <button>Доставка</button>
-          <button>Гарантия</button>
-          <button>Кредит</button>
-        </article>
+        <ul>
+          <li>
+            <button>Доставка</button>
+          </li>
+          <li>
+            <button>Гарантия</button>
+          </li>
+          <li>
+            <button>Кредит</button>
+          </li>
+        </ul>
 
-        <article>
+        <!-- Не заметил в макете что там скрытые элементы есть :) -->
+        <div>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
             Ведь мы неплохо заработаем,<br>
             поднимая его на ваш этаж!</p>
-        </article>
-
-        <article>
           <img src='https://via.placeholder.com/390x270/' alt='placeholder'>
-        </article>
+        </div>
+
+        <!-- Пока эти элементы скрою, потом через стили буду их скрывать и раскрывать  -->
+        <div style='display: none;'>
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием,<br>
+            вы всегда можете быть уверены в нашей<br>
+            гарантии. Мы обменяем сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.</p>
+          <img src='https://via.placeholder.com/390x270/' alt='placeholder'>
+        </div>
+
+        <div style='display: none;'>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще!<br>
+            Кредитные консультанты придут вам на помощь.</p>
+          <img src='https://via.placeholder.com/390x270/' alt='placeholder'>
+        </div>
+
       </section>
 
     </section>
@@ -239,7 +259,7 @@
 
     <section>
 
-      <article>
+      <div>
         <h2>Компания «Техномарт»</h2>
         <p>
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -250,14 +270,22 @@
           Техномарт работает со многими транспортными компаниями:
         </p>
 
-        <p><span>&mdash; </span>Деловые Линии</p>
-        <p><span>&mdash; </span>Автотрейдинг</p>
-        <p><span>&mdash; </span>ЖелДорЭкспедиция</p>
+        <ul>
+          <li>
+            <p><span>&mdash; </span>Деловые Линии</p>
+          </li>
+          <li>
+            <p><span>&mdash; </span>Автотрейдинг</p>
+          </li>
+          <li>
+            <p><span>&mdash; </span>ЖелДорЭкспедиция</p>
+          </li>
+        </ul>
 
         <a href='#'>Подробнее о компании</a>
-      </article>
+      </div>
 
-      <article>
+      <div>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
@@ -265,13 +293,13 @@
           <img src="https://via.placeholder.com/300x158/" alt='placeholder'>
         </a>
         <a href='#'>Заблудились? Напишите нам!</a>
-      </article>
+      </div>
     </section>
 
   </main>
   <footer>
     <section>
-      <article>
+      <div>
         <p>Техномарт</p>
         <ul>
           <li>
@@ -290,10 +318,10 @@
             <a>Контакты</a>
           </li>
         </ul>
-      </article>
+      </div>
 
-      <article>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+      <div>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <ul>
           <li>
             <a>Материалы</a>
@@ -308,25 +336,25 @@
             <a>Спецпредложения</a>
           </li>
         </ul>
-      </article>
+      </div>
 
     </section>
 
     <section>
-      <article>
+      <div>
         <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-      </article>
+      </div>
 
-      <article>
+      <div>
         <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
         <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
         <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
-      </article>
+      </div>
 
-      <article>
+      <div>
         <p>Обратная связь:<br><a href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a></p>
         <p>Разработано -<br><a href='https://htmlacademy.ru/intensive/htmlcss'>htmlacademy.ru</a></p>
-      </article>
+      </div>
     </section>
 
   </footer>
