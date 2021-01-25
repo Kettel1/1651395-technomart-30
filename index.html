@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Техномарт</title>
+  <link rel='stylesheet' href='css/normalize.css'>
 </head>
 
 <body>
@@ -13,10 +14,12 @@
 
     <section>
       <h1>Техномарт</h1>
-      <input type="search" placeholder="Поиск:">
-      <button>Закладки</button>
-      <button>Корзина:0</button>
-      <button>Оформить заказ</button>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <input type="search" placeholder="Поиск:">
+      </form>
+      <a href='#'>Закладки: <span>0</span></a>
+      <a href='#'>Корзина: <span>0</span></a>
+      <a href='#'>Оформить заказ</a>
     </section>
 
     <section>
@@ -215,13 +218,13 @@
       <section>
         <ul>
           <li>
-            <button>Доставка</button>
+            <a>Доставка</a>
           </li>
           <li>
-            <button>Гарантия</button>
+            <a>Гарантия</a>
           </li>
           <li>
-            <button>Кредит</button>
+            <a>Кредит</a>
           </li>
         </ul>
 
@@ -301,7 +304,7 @@
   <footer>
     <section>
       <div>
-        <p>Техномарт</p>
+        <h4>Техномарт</h4>
         <ul>
           <li>
             <a>Компания</a>
@@ -322,7 +325,7 @@
       </div>
 
       <div>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
         <ul>
           <li>
             <a>Материалы</a>

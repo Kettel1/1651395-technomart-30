@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='css/normalize.css'>
 </head>
 
 <body>
@@ -13,9 +14,9 @@
         <section>
             <h1>Техномарт</h1>
             <input type="search" placeholder="Поиск:">
-            <button>Закладки</button>
-            <button>Корзина:0</button>
-            <button>Оформить заказ</button>
+            <a>Закладки: <span>0</span></a>
+            <a>Корзина: <span>0</span></a>
+            <a>Оформить заказ</a>
         </section>
 
         <section>
@@ -59,6 +60,11 @@
 
         <section>
             <ul>
+                <!-- Иконка домика -->
+                <li>
+                    <a>Icnons</a>
+                </li>
+                <!-- Иконка домика -->
                 <li>
                     <a href="#">Каталог</a>
                 </li>
@@ -71,49 +77,83 @@
             </ul>
         </section>
 
-        <h2>Перфораторы</h2>
+        <div>
+            <h2>Перфораторы</h2>
+        </div>
 
 
         <!-- Левый блок -->
         <aside>
             <section>
+
                 <h3>Фильтр:</h3>
+                <fieldset>
 
-                <p>Цена</p>
-                <input type='range' min="0" max="30000" step='100' id='range'>
-                <input type='text'>
-                <p>-</p>
-                <input type='text'>
+                    <legend>
+                        <h4>Цена</h4>
+                    </legend>
+
+                    <div>
+                        <input type='range' min="0" max="30000" step='100' id='range'>
+                        <input type='text'>
+                        <p>-</p>
+                        <input type='text'>
+                    </div>
+
+                </fieldset>
             </section>
 
             <section>
-                <h3>Производители</h3>
+                <fieldset>
+                    <legend>
+                        <h3>Производители</h3>
+                    </legend>
 
-                <input type="checkbox" checked id='1'>
-                <label for='1'>Bosch</label>
-
-                <input type="checkbox" id='2'>
-                <label for='2'>Интерскол</label>
-
-                <input type="checkbox" checked id='3'>
-                <label for='3'>Makita</label>
-
-                <input type="checkbox" id='4'>
-                <label for='4'>Dewalt</label>
-
-                <input type="checkbox" id='5'>
-                <label for='5'>Hitachi</label>
-
+                    <ul>
+                        <li>
+                            <input type="checkbox" checked id='1'>
+                            <label for='1'>Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='2'>
+                            <label for='2'>Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked id='3'>
+                            <label for='3'>Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='4'>
+                            <label for='4'>Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='5'>
+                            <label for='5'>Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
             </section>
 
             <section>
-                <h3>Питание</h3>
+                <fieldset>
+                    <legend>
+                        <h3>Питание</h3>
+                    </legend>
 
-                <input type='radio' checked id='2.1'>
-                <label for='2.1'>Аккумуляторные</label>
+                    <ul>
+                        <li>
+                            <input type='radio' id='2.1' value='123' name='123'>
+                            <label for='2.1'>Аккумуляторные</label>
+                        </li>
 
-                <input type='radio' checked id='2.2'>
-                <label for='2.2'>Сетевые</label>
+                        <li>
+                            <input type='radio' id='2.2' value='' name=''>
+                            <label for='2.2'>Сетевые</label>
+                        </li>
+
+                    </ul>
+
+                </fieldset>
             </section>
 
             <button>Показать</button>
@@ -270,11 +310,14 @@
             <h3>
                 Пара слов о перфораторах
             </h3>
-            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
+                в
                 кирпиче, бетоне и камне.<br>
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+                функции
                 дрели, шуруповерта и отбойного молотка.<br>
-                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
+                молоток и
                 ударная дрель.
             </p>
         </section>
@@ -282,68 +325,65 @@
 
     <footer>
         <section>
-          <div>
-            <p>Техномарт</p>
-            <ul>
-              <li>
-                <a>Компания</a>
-              </li>
-              <li>
-                <a>Новости</a>
-              </li>
-              <li>
-                <a>Каталог</a>
-              </li>
-              <li>
-                <a>Доставка</a>
-              </li>
-              <li>
-                <a>Контакты</a>
-              </li>
-            </ul>
-          </div>
-    
-          <div>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-            <ul>
-              <li>
-                <a>Материалы</a>
-              </li>
-              <li>
-                <a>Техника</a>
-              </li>
-              <li>
-                <a>Инструменты</a>
-              </li>
-              <li>
-                <a>Спецпредложения</a>
-              </li>
-            </ul>
-          </div>
-    
+            <div>
+                <h4>Техномарт</h4>
+                <ul>
+                    <li>
+                        <a>Компания</a>
+                    </li>
+                    <li>
+                        <a>Новости</a>
+                    </li>
+                    <li>
+                        <a>Каталог</a>
+                    </li>
+                    <li>
+                        <a>Доставка</a>
+                    </li>
+                    <li>
+                        <a>Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812)
+                        555-05-55</a>
+                </address>
+                <ul>
+                    <li>
+                        <a>Материалы</a>
+                    </li>
+                    <li>
+                        <a>Техника</a>
+                    </li>
+                    <li>
+                        <a>Инструменты</a>
+                    </li>
+                    <li>
+                        <a>Спецпредложения</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-    
+
         <section>
-          <div>
-            <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-          </div>
-    
-          <div>
-            <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
-            <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
-            <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
-          </div>
-    
-          <div>
-            <p>Обратная связь:<br><a href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a></p>
-            <p>Разработано -<br><a href='https://htmlacademy.ru/intensive/htmlcss'>htmlacademy.ru</a></p>
-          </div>
+            <div>
+                <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+            </div>
+
+            <div>
+                <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
+                <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
+                <img src='https://via.placeholder.com/44x44/' alt='placeholder'>
+            </div>
+
+            <div>
+                <p>Обратная связь:<br><a href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a></p>
+                <p>Разработано -<br><a href='https://htmlacademy.ru/intensive/htmlcss'>htmlacademy.ru</a></p>
+            </div>
         </section>
-    
-      </footer>
-
-
-
+    </footer>
 </body>
 
 </html>
