@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
     <link rel='stylesheet' href='css/normalize.css'>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <!-- Почему-то икнока не работает... -->
 </head>
 
 <body>
     <header>
 
         <section>
-            <h1>Техномарт</h1>
+            <a href='index.html'><h1>Техномарт</h1></a>
             <form action="https://echo.htmlacademy.ru/" method="post">
                 <img src='img/icon-search.svg' style="background-color: black;" width="17" height='17' alt=''>
                 <input type="search" placeholder="Поиск:">
@@ -33,9 +38,9 @@
             </div>
 
             <div>
-                <a href='+78125550555'><img src='img/icon-phone.svg' style="background-color: black;" height='19'
+                <a href='tel:+78125550555'><img src='img/icon-phone.svg' style="background-color: black;" height='19'
                         width='19' alt=''>+7(812)555-05-55</a>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
 
             <div>
@@ -260,7 +265,8 @@
 
                     <li>
                         <article>
-                            <img src='img/perforator-bfg-3000-2000.jpg' width='144' height='128' alt='Перфоратор BFG 6000'>
+                            <img src='img/perforator-bfg-3000-2000.jpg' width='144' height='128'
+                                alt='Перфоратор BFG 6000'>
                             <p>Перфоратор BOSCH<br>BFG 3000</p>
                             <p>22500 Р.</p>
                             <button type="submit">15500 Р.</button>
