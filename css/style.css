@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6, p {
     --basic-footer-white: #F3F7F9;
     --basic-footer-yellow: #FFD180;
     --basic-lightgreen: #63A63E;
+    --basic-very-lightblue: #F2F6F8;
+    --basic-lightgrey: #F7F3EC;
 }
 /* Btn */
 
@@ -76,7 +78,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--basic-color);
 }
 
-/* Header search */
 
 .header_search_input {
     position: relative;
@@ -116,10 +117,7 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
 }
 
-/* Header search */
 
-
-/* Header Btn */
 
 
 .header_text {
@@ -170,8 +168,6 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100%;
     padding: 12.6px 10px;
 }
-
-/* Header Btn */
 
 
 .header_inner {
@@ -259,8 +255,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+.header_account_name {
+    font-size: 21px;
+    line-height: 21px;
+    background-color: white;
+    padding: 10px 30px;
+}
 
+.header_account_info {
+    display: flex;
+    justify-content: space-around;
+}
 
+.header_account_personal {
+    text-decoration: none;
+    color: var(--text-color)
+}
 /* features */
 
 .features_inner {
@@ -268,11 +278,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 300px;
 }
 
-.red {
-    background-color:rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    width: 150px;
-}
+
 .features_link {
     background-color:rgba(255, 255, 255, 0.3);
 
@@ -360,8 +366,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Product */
 
-
-
 .product_features_list {
     display: flex;
     justify-content: space-between;
@@ -416,9 +420,6 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     justify-content: space-between
 }
-
-
-
 
 
 /* Services */
@@ -626,4 +627,202 @@ h1, h2, h3, h4, h5, h6, p {
 .footer_secondary_subtext {
     text-decoration: none;
     color:var(--basic-footer-yellow)
+}
+
+
+/* -------------------------------------------------------------
+catalog.html 
+---------------------------------------------------------------- */
+
+/* Location */
+
+.location_list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.location_item {
+    margin: 0 20px;
+}
+
+.location_link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Perfo */
+
+.perfo {
+    background-color: var(--basic-very-lightblue)
+}
+
+.perfo_title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--text-color)
+}
+
+
+/* Things */
+
+.things_left_filter {
+    background-color: var(--basic-lightgrey);
+    padding-bottom: 10px;
+    width: 100%;
+}
+.things_left_filter_title {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.things_block {
+    display: flex;
+}
+
+.things_left_block {
+    width: 23.4%;
+    /* 220px */
+}
+
+.things_right_block {
+    width: 74.26%; 
+    /* 698px */
+}
+
+/* Filter */
+
+.filter_price {
+    border: none;
+    padding: 0;
+}
+
+.filter_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.filter_manufact_list, 
+.filter_battery_list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter_manufact_item,
+.filter_battery_item {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filter_btn {
+    text-transform: uppercase;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    outline: none;   
+    height: 38px;
+}
+
+/* Sort */
+
+
+.sort_block {
+    display: flex;
+    background-color: var(--basic-lightgrey);
+    margin-left: 20px;
+}
+
+.sort_list {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+}
+
+.sort_item {
+    margin-right: 30px;
+}
+
+.sort_link {
+    color: black;
+    opacity: 0.3;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--secondary-color)
+}
+
+
+
+/* Product */
+
+.product_features_list_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.product_features_item {
+
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Page */
+
+.page_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+
+.page_item {
+    padding: 0;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.page_link {
+    color: black;
+    text-decoration: none;
+    padding: 9px 15px;
+    border: 1px solid var(--basic-extra-white);
+    border-radius: 2px;
+    margin-right: 10px;
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.page_link:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 2px;
+}
+
+/* about_perforaots */
+
+.about_perforators {
+    background-color: var(--basic-background-lightblue);
+}
+
+.about_perforators_title {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about_perforators_subtitle {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
 }
