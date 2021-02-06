@@ -104,11 +104,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background-color .2s ease;
 }
 
-
-
 .header_search::placeholder { 
     color: white;
-
 }
 
 .header_search_icon {
@@ -116,19 +113,20 @@ h1, h2, h3, h4, h5, h6, p {
     top: 12px;
     left: -30px;
     opacity: 0.3;
-    transition: opacity 0.2s ease,
+    fill: white;
+    transition:
+    opacity 0.2s ease,
     fill .2s ease;
 }
 
-.header_test:hover > div .header_search_icon {
+.header_search_label:hover > .header_search_icon {
     opacity: 1;
 }
 
-input.header_search:focus + div .header_search_icon path {
+.header_search:focus + .header_search_icon {
     fill: red;
     opacity: 1;
 }
-
 
 .header_search:focus {
     background-color: white;
@@ -404,25 +402,38 @@ input.header_search:focus + div .header_search_icon path {
 .features_inner {
     height: 123px;
     width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
+.features_inner > img {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
 
 .features_link {
     background-color:rgba(255, 255, 255, 0.3);
-
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
     color: white;
     padding: 10px;
-
+    margin-left: 24px;
+    width: 135px;
+    text-align: center;
+    margin-top: 14px;
 }
 
 .features_link:hover {
     background-color:rgba(197, 197, 197, 0.3);
 
 }
+
+
 
 .features_perforator_title {
     font-weight: bold;
@@ -447,6 +458,46 @@ input.header_search:focus + div .header_search_icon path {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.new_product { 
+    width: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6px;
+    right: -25px;
+}
+
+.features_inner_perforator {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+} 
+
+.features_perforator_title {
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.features_perforator_subtitle {
+    margin-left: 24px;
+    margin-top: 5px;
+}
+
+.features_inner_perforator .btn {
+
+    width: 192px;
+    position: absolute;
+    bottom: 27px;
+    left: 24px;
 }
 
 .materials {
