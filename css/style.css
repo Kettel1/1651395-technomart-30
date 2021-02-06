@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p {
     --basic-lightgreen: #63A63E;
     --basic-very-lightblue: #F2F6F8;
     --basic-lightgrey: #F7F3EC;
+    --basic-greylight: #C5C5C5;
 }
 /* Btn */
 
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     line-height: 18px;
     padding: 10px 20px;
-    
+
     color: white;
     text-decoration: none;
     border: none;
@@ -63,7 +64,6 @@ h1, h2, h3, h4, h5, h6, p {
 .header_menu {
     display: flex;
     align-items: center;
-    justify-content: space-between
 }
 
 .header_logo {
@@ -72,13 +72,19 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0px 5px 0px 0px rgb(186,39,50);
     -webkit-box-shadow: 0px 5px 0px 0px rgb(186,39,50);
     -moz-box-shadow: 0px 5px 0px 0px rgb(186,39,50);
+    margin-right: 40px;
+    transition: background-color .2s ease;
+}
+
+.header_logo:active {
+    background-color: #BA2732
 }
 
 .header_container-color {
     background-color: var(--basic-color);
 }
 
-
+/* Search */
 .header_search_input {
     position: relative;
     
@@ -87,48 +93,70 @@ h1, h2, h3, h4, h5, h6, p {
 .header_search {
     outline: none;
     border: none;
-    padding: 12px 0px;
-    padding-left: 25px;
     width: 270px;
     background-color: var(--basic-color);
     color: white;
+    margin-left: -40px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 35px;
 }
 
 
 
 .header_search::placeholder { 
     color: white;
+
 }
 
-.header_icon_search::before {
-    background-image: url(../img/icon-search.svg);
-    background-repeat: no-repeat;
+.header_search_icon {
     position: absolute;
-    height: 17px;
-    width: 17px;
-    content: '';
     top: 12px;
-    left: 0px;
+    left: -30px;
     opacity: 0.3;
-    transition: 0.1s
+    fill: white;
 }
 
-.header_icon_search:hover:before {
+.header_test:hover > .header_search_icon {
     opacity: 1;
+    
 }
 
+.header_search:focus > .header_search_icon {
+    fill: var(--secondary-color);
+}
+
+.header_search:focus {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+
+}
+
+/* Search */
 
 
 
 .header_text {
     color: white;
     position: relative;
+  
+    padding-top: 13px;
+    padding-bottom: 12px;
+
+    overflow: hidden;
 }
 
-
-.bookmark, .cart {
-    padding-left: 20px;
+.cart {
+    padding-left: 48px;
+    padding-right: 36px;
 }
+
+.bookmark {
+    padding-left: 44px;
+    padding-right: 32px;
+}
+
 .bookmark:before {
     background-image: url(../img/icon-bookmark.svg);
     background-repeat: no-repeat;
@@ -136,10 +164,10 @@ h1, h2, h3, h4, h5, h6, p {
     height: 15px;
     width: 15px;
     content: '';
-    top: 0px;
-    left: 0px;
+    top: 13px;
+    left: 20px;
     opacity: 0.3;
-    transition: 0.1s
+    transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 .cart:before {
@@ -149,26 +177,47 @@ h1, h2, h3, h4, h5, h6, p {
     height: 15px;
     width: 15px;
     content: '';
-    top: 0px;
-    left: 0px;
+    top: 13px;
+    left: 20px;
     opacity: 0.3;
-    transition: 0.1s
+    transition: background-color 0.2s;
 }
 
 .header_text:hover:before {
     opacity: 1;
 }
 
+.header_text:nth-child(1):active {
+    background-color: #161D29
+} 
+
+.header_text:active {
+    opacity: 0.5;
+}
+
+
+
+.header_text:active:before {
+    opacity: 0.3;
+} 
+
+
+
+
+
 .header_link {
     text-decoration: none;
+}
+
+.header_link:nth-child(2) {
+    margin-right: 100px;
 }
 
 .order {
     background-color: var(--basic-lightgreen);
     height: 100%;
-    padding: 12.6px 10px;
+    padding: 12.5px 24.5px;
 }
-
 
 .header_inner {
     padding-top: 50px; 
@@ -176,34 +225,77 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-between;
 }
 
+.header_inner_border {
+    border: 3px solid white;
+    height: 45px;
+    width: 270px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header_inner_block{
+    position: relative;
+}
+
+.header_inner_block:nth-child(2) {
+    text-align: center;
+}
+
 .header_about_btn {
     border: none;
     background-color: white;
     outline: none;
-    padding: 10px 15px;
     cursor: pointer;
     position: relative;
+    font-size: 21px;
+    transition: opacity .1s ease,
+    color .1s ease;
 }
 
 .header_about_btn:hover {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
-.login {
-    padding: 10px 30px;
-    text-align: center;
+.header_about_btn:active {
+    color: var(--basic-greylight)
 }
-.login::before {
-    content: url(../img/icon-login.svg);
+
+.about_button {
+    display: flex;
+}
+
+.header_about_btn--signup {
+    padding: 10.7px 25px;;
+}
+
+.header_about_btn--login {
+    padding-top: 10.7px;
+    padding-bottom: 10.7px; 
+    padding-left: 47px;
+    padding-right: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.header_about_btn--login:hover > .header_about_btn_icon{
+    opacity: 1;
+}
+
+.header_about_btn--login:active > .header_about_btn_icon{
+    opacity: 0.3;
+}
+
+.header_about_btn_icon{
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 14px;
+    left: 20px;
+    opacity: 0.3;
 }
 
 .header_inner_text {
     color: var(--secondary-color);
     font-style: italic;
-
+    margin-left: 20px;
 }
 
 .header_inner_phone {
@@ -214,7 +306,6 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 30px;
     position: relative;
     padding-left: 25px;
-    border: 3px solid white;
     
 }
 
@@ -228,7 +319,9 @@ h1, h2, h3, h4, h5, h6, p {
 .header_inner_address {
     font-style: normal;
     font-size: 14px;
-    color: var(--text-color)
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 5px;
 }
 
 .header_nav {
@@ -242,7 +335,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 21px  0px;; 
     margin: 0px;
     margin-top: 30px;
-    background-color: var(--text-color);
     width: 100%;
 }
 
@@ -250,8 +342,15 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--text-color);
     text-decoration: none;
     color: white;
-    box-shadow: inset 0px -5px 0px #293449;
-    padding: 20px 45px;
+    box-shadow: inset 0px -5px 0px var(--basic-color);
+    padding: 20px 42px;
+    font-size: 18px;
+    line-height: 24px;
+    transition: background-color .2s ease;
+}
+
+.header_nav_link:hover {
+    background-color: var(--basic-color);
 }
 
 
@@ -338,7 +437,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 24px;
     line-height: 30px;
 }
-/* Пока так, потом сетку на гридах сделаю */
 
 .materials {
     background-color: #FFC047
