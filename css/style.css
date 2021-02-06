@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
     --basic-very-lightblue: #F2F6F8;
     --basic-lightgrey: #F7F3EC;
     --basic-greylight: #C5C5C5;
+    --success: #5FBB2D;
 }
 /* Btn */
 
@@ -100,6 +101,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 13px;
     padding-bottom: 12px;
     padding-left: 35px;
+    transition: background-color .2s ease;
 }
 
 
@@ -114,24 +116,26 @@ h1, h2, h3, h4, h5, h6, p {
     top: 12px;
     left: -30px;
     opacity: 0.3;
-    fill: white;
+    transition: opacity 0.2s ease,
+    fill .2s ease;
 }
 
-.header_test:hover > .header_search_icon {
+.header_test:hover > div .header_search_icon {
     opacity: 1;
-    
 }
 
-.header_search:focus > .header_search_icon {
-    fill: var(--secondary-color);
+input.header_search:focus + div .header_search_icon path {
+    fill: red;
+    opacity: 1;
 }
+
 
 .header_search:focus {
     background-color: white;
     color: black;
-    opacity: 0.8;
-
 }
+
+
 
 /* Search */
 
@@ -180,7 +184,7 @@ h1, h2, h3, h4, h5, h6, p {
     top: 13px;
     left: 20px;
     opacity: 0.3;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 .header_text:hover:before {
@@ -217,6 +221,11 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--basic-lightgreen);
     height: 100%;
     padding: 12.5px 24.5px;
+    transition: background-color .2s ease;
+}
+
+.order:hover {
+    background-color: var(--success)
 }
 
 .header_inner {
@@ -248,8 +257,9 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
     position: relative;
     font-size: 21px;
-    transition: opacity .1s ease,
-    color .1s ease;
+    transition: 
+    opacity .2s ease,
+    color .2s ease;
 }
 
 .header_about_btn:hover {
@@ -278,10 +288,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header_about_btn--login:hover > .header_about_btn_icon{
+    transition: .2s ease;
     opacity: 1;
 }
 
-.header_about_btn--login:active > .header_about_btn_icon{
+.header_about_btn--login:active > .header_about_btn_icon {
     opacity: 0.3;
 }
 
