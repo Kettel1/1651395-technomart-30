@@ -695,14 +695,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-
-
-
-
-
-
-
-
 /* Hover item */
 
 .product_features_name {
@@ -830,24 +822,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .services__inner_btn {
     color: white;
     background-color: var(--text-color);
@@ -869,32 +843,33 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--text-color);
 }
 
+.services__inner_btn:hover:not(.active){
+    background-color: var(--basic-color)
+}
 
 
 
+.active {
+    background-color: white;
+    color: var(--text-color);
+    box-shadow: none;
+}
 
+.services_content {
+    width: 100%;
+}
 
+.services_content.serv-delivery {
+    background: url('../img/services-delivery.png') right no-repeat;
+}
 
+.services_content.serv-guarantee {
+    background: url('../img/servieces-guarantee.png') right no-repeat;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.services_content.serv-credit {
+    background: url('../img/services-credit.png') right no-repeat;
+}
 
 
 .services__inner_list {
@@ -904,19 +879,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-
-
 .services_content_title {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 30px;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .services_content_subtitle {
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 24px; 
+    margin-top: 30px;
 }
 
 /* About */
