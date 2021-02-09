@@ -1,5 +1,5 @@
 function openTab(evt, cityName) {
-    var i, services_content, services__inner_btn;
+    let i, services_content, services__inner_btn;
     services_content = document.getElementsByClassName("services_content");
     for (i = 0; i < services_content.length; i++) {
         services_content[i].style.display = "none";
