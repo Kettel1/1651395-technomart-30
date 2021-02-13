@@ -41,6 +41,7 @@
                                         d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
                                 </svg>
                             </label>
+
                         </form>
                     </div>
 
@@ -237,7 +238,7 @@
                             <article class='product_features_inner'>
                                 <div class='product_action'>
                                     <a href="###" class='add-to-cart'>
-                                       Купить</a>
+                                        Купить</a>
                                     <a href="###" class='add-to-bookmark'>В закладки</a>
                                 </div>
                                 <a href='###' class='product_features_link'>
@@ -545,6 +546,38 @@
         </section>
 
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal">
+        <button class='modal_close'></button>
+        <div class="modal_container">
+            <div class="modal_inner">
+                <div class="modal_name">
+                    <label for="" class="modal_title">Ваше имя:</label>
+                    <input type="name" class="modal_text_field" placeholder="Имя Фамилия">
+                </div>
+
+                <div class="modal_email">
+                    <label for="" class="modal_title">Ваш e-mail:</label>
+                    <input type="text" class="modal_text_field" placeholder="email@example.com">
+                </div>
+            </div>
+
+            <div class="modal_letter_text">
+                <label for="" class="modal_title">Текст письма:</label>
+                <textarea type="text" class="modal_text_field letter_field" placeholder="В свободной форме"></textarea>
+            </div>
+        </div>
+
+        <div class="modal_field_btn">
+            <div class="modal_container">
+                <button class='modal_btn btn'>Отправить</button>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src='js/app.js'></script>
 
