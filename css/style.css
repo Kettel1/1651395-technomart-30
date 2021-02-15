@@ -41,10 +41,10 @@ h1, h2, h3, h4, h5, h6, p {
     --basic-greylight: #C5C5C5;
     --basic-oldprice: #A9A9A9;
     --basic-lighgrey-300: #F4F4F4;
-    --basic-lightgrey-350: #d7dcde;
-    --basic-light-grey-200: #ababab;
-    --basic-light-grey-300: #cfcfcf;
-    --basic-light-grey-250: #f1f1f1;
+    --basic-lightgrey-350: #D7DCDE;
+    --basic-light-grey-200: #ABABAB;
+    --basic-light-grey-300: #CFCFCF;
+    --basic-light-grey-250: #F1F1F1;
     --basic-light-grey-100: #E5E5E5;
     --basic-footer-yellow: #FFD180;
     --basic-lightyeloow: #FFC047;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6, p {
     --success: #5FBB2D;
     --basic-darkgreen: #518534;
     --basic-lightgreen-300: #8ED78F;
-    --basic-green-400: #00ca74;
+    --basic-green-400: #00CA74;
     --basic-darkgreen-400: #367315;
     --secondary-color: #EE3643;
     --basic-darkred: #CA2C37;
@@ -285,7 +285,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header_about_btn--signup {
     padding: 10.7px 25px;
-    ;
 }
 
 .header_about_btn--login {
@@ -807,7 +806,8 @@ h1, h2, h3, h4, h5, h6, p {
     bottom: 0;
 }
 
-.proudct_features_btn::after, .proudct_features_btn::before {
+.proudct_features_btn::after, 
+.proudct_features_btn::before {
     left: 100%;
     top: 50%;
     border: solid transparent;
@@ -848,7 +848,13 @@ h1, h2, h3, h4, h5, h6, p {
     transition: box-shadow .2s ease;
 }
 
-.manufacturers_link img:hover {
+
+.manufacturers_link,
+.manufacturers_link img {
+    display: block;
+}
+
+.manufacturers_link:hover {
     -webkit-box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.2);
@@ -1267,10 +1273,12 @@ h1, h2, h3, h4, h5, h6, p {
     height: 112px;
     width: 100%;
     margin-top: 34px;
+    display: flex;
+    align-items: center;
 }
 
 .modal_btn {
-    width: 100%;
+    width: 465px;
     margin-top: 37px;
     background-color: var(--secondary-color);
     color: white;
@@ -1279,6 +1287,8 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
+    margin: 0 auto;
+
 }
 
 /* -------------------------------------------------------------
@@ -1300,7 +1310,6 @@ catalog.html
     text-transform: uppercase;
     font-size: 13px;
     line-height: 18px;
-    ;
 }
 
 .location_item:before {
@@ -1349,7 +1358,7 @@ catalog.html
     font-size: 13px;
     line-height: 18px;
     padding-left: 18px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     font-weight: normal;
 }
 
@@ -1467,7 +1476,7 @@ catalog.html
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     padding-top: 14px;
     padding-bottom: 8.5px;
 }
@@ -1538,7 +1547,8 @@ catalog.html
     cursor: pointer;
 }
 
-.filter_manufact_name::before, .filter_manufact_name::after {
+.filter_manufact_name::before, 
+.filter_manufact_name::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -1546,7 +1556,8 @@ catalog.html
     transition: opacity .2s ease;
 }
 
-.filter_manufact_name:hover:before, .filter_manufact_name:hover:after {
+.filter_manufact_name:hover:before, 
+.filter_manufact_name:hover:after {
     opacity: 1;
 }
 
@@ -1574,7 +1585,8 @@ catalog.html
     cursor: pointer;
 }
 
-.filter_manufact_item input[type="checkbox"]+.filter_manufact_name::after {
+.filter_manufact_item input[type="checkbox"]+
+.filter_manufact_name::after {
     content: none;
 }
 
@@ -1629,7 +1641,8 @@ catalog.html
     transition: opacity .2s ease;
 }
 
-.filter_battery_radio+label:hover:before, .filter_battery_radio:checked+label:hover:after {
+.filter_battery_radio+label:hover:before, 
+.filter_battery_radio:checked+label:hover:after {
     opacity: 1;
 }
 
@@ -1649,7 +1662,7 @@ catalog.html
     padding-left: 18px;
     text-transform: uppercase;
     font-size: 13px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Cuprum", sans-serif;
 }
 
 .sort_list {
@@ -1682,15 +1695,15 @@ catalog.html
 }
 
 .sort_shape svg {
-    fill: var(--basic-greylight)
+    fill: var(--basic-greylight);
 }
 
 .sort_shape svg:hover {
-    fill: black
+    fill: black;
 }
 
 .sort_shape svg:active {
-    fill: var(--secondary-color)
+    fill: var(--secondary-color);
 }
 
 /* JS */
@@ -1699,7 +1712,7 @@ catalog.html
     opacity: 1;
     color: var(--secondary-color);
     border: none;
-    fill: var(--secondary-color)
+    fill: var(--secondary-color);
 }
 
 .sort_link_active:hover {
@@ -1740,7 +1753,7 @@ catalog.html
     border: 1px solid rgba(229, 229, 229, 1);
     border-radius: 2px;
     margin-right: 10px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     font-size: 13px;
     line-height: 18px;
 }
@@ -1774,7 +1787,7 @@ catalog.html
 }
 
 .about_perforators_subtitle {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
