@@ -284,12 +284,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header_about_btn--signup {
-    padding: 10.7px 25px;
+    padding: 11px 25px;
 }
 
 .header_about_btn--login {
-    padding-top: 10.7px;
-    padding-bottom: 10.7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 47px;
     padding-right: 25px;
     text-align: center;
@@ -352,7 +352,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: space-between;
     padding: 21px 0px;
-    ;
     margin: 0px;
     margin-top: 30px;
     width: 100%;
