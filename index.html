@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=940'>
+    <meta name="description" content="Техномарт магазин техники">
     <title>HTML Academy: Техномарт</title>
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' href='css/style.css'>
+    <meta name="Keywords" content="HTML, META, метатег, тег, поисковая система">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,7 +44,6 @@
                                         d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
                                 </svg>
                             </label>
-
                         </form>
                     </div>
 
@@ -52,11 +53,9 @@
                         </p>
                     </a>
 
-
                     <a href='#' class='header_link'>
                         <p class='header_text cart'>Корзина: <span>0</span></p>
                     </a>
-
 
                     <a href='#' class='header_link header_text order'>Оформить заказ</a>
 
@@ -195,7 +194,7 @@
                         <li class='product_features_item'>
                             <article class='product_features_inner'>
                                 <div class='product_action'>
-                                    <a href="#" class='add-to-cart'>
+                                    <a href="#" class='add-to-cart button-add'>
                                         Купить
                                     </a>
                                     <a href="#" class='add-to-bookmark'>В закладки</a>
@@ -214,7 +213,7 @@
                         <li class='product_features_item'>
                             <article class='product_features_inner'>
                                 <div class='product_action'>
-                                    <a href="#" class='add-to-cart'>
+                                    <a href="#" class='add-to-cart button-add'>
                                         Купить
                                     </a>
                                     <a href="#" class='add-to-bookmark'>В закладки</a>
@@ -233,7 +232,7 @@
                         <li class='product_features_item'>
                             <article class='product_features_inner'>
                                 <div class='product_action'>
-                                    <a href="#" class='add-to-cart'>
+                                    <a href="#" class='add-to-cart button-add'>
                                         Купить</a>
                                     <a href="#" class='add-to-bookmark'>В закладки</a>
                                 </div>
@@ -250,7 +249,7 @@
                         <li class='product_features_item'>
                             <article class='product_features_inner'>
                                 <div class='product_action'>
-                                    <a href="#" class='add-to-cart'>
+                                    <a href="#" class='add-to-cart button-add'>
                                         Купить</a>
                                     <a href="#" class='add-to-bookmark'>В закладки</a>
                                 </div>
@@ -428,15 +427,14 @@
                         <h2 class='about__title'>Контакты</h2>
                         <p class='about__subtitle'>Вы можете забрать товар сами,<br>
                             заехав в наш офис:</p>
-                        <a href='https://goo.gl/maps/BWfG3Lx7AxNHwwP17' target="_blank" class='about_map_link'>
+                        <a href='https://goo.gl/maps/BWfG3Lx7AxNHwwP17' target="_blank" class='about_map_link open-map'>
                             <img src='img/about-map.png' width='300' height='158' alt='Карта'>
                         </a>
-                        <a href='#' class='btn'>Заблудились? Напишите нам!</a>
+                        <a href="blank.html" class='btn open-about'>Заблудились? Напишите нам!</a>
                     </div>
                 </div> <!-- about_wrapper -->
             </div> <!-- container  -->
         </section>
-
     </main>
 
     <footer class='footer'>
@@ -500,7 +498,8 @@
             <div class='container'>
                 <div class="footer_secondary">
 
-                    <p class='footer_secondary_title footer-mg'>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+                    <p class='footer_secondary_title footer-mg'>© 2010–2019 Компания «Техномарт»<br>Все права защищены
+                    </p>
 
                     <div class='footer_secondary_social footer-mg'>
                         <ul class='footer_secondary_list'>
@@ -552,48 +551,80 @@
                                 href='https://htmlacademy.ru/intensive/htmlcss'
                                 class='footer_secondary_subtext'>htmlacademy.ru</a></p>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal about -->
 
     <section class="modal_about">
         <h2 class='visually-hidden'>Модальное окно обратной связи</h2>
         <button class='modal_close'>Close</button>
         <div class="modal_container">
-            <div class="modal_inner">
-                <div class="modal_name">
-                    <label class="modal_title">Ваше имя:
-                        <input type="text" class="modal_text_field" placeholder="Имя Фамилия">
-                    </label>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="modal_inner">
+                    <div class="modal_name">
+                        <label class="modal_title">Ваше имя:
+                            <input type="text" class="modal_text_field" placeholder="Имя Фамилия" name='Name' required>
+                        </label>
+                    </div>
+
+                    <div class="modal_email">
+                        <label class="modal_title">Ваш e-mail:
+                            <input type="email" class="modal_text_field" placeholder="email@example.com" name='Email'
+                                required>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="modal_email">
-                    <label class="modal_title">Ваш e-mail:
-                        <input type="text" class="modal_text_field" placeholder="email@example.com">
+                <div class="modal_letter_text">
+                    <label class="modal_title">Текст письма:
+                        <textarea class="modal_text_field letter_field" placeholder="В свободной форме" required
+                            id='id'></textarea>
                     </label>
                 </div>
-            </div>
-
-            <div class="modal_letter_text">
-                <label class="modal_title">Текст письма:
-                    <textarea class="modal_text_field letter_field" placeholder="В свободной форме"></textarea>
-                </label>
-            </div>
         </div>
 
         <div class="modal_field_btn">
             <button class='modal_btn btn'>Отправить</button>
         </div>
+        </form>
     </section>
 
 
+    <!-- Modal map -->
+    <section class='modal_map'>
+        <div class='modal_close'></div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8546.11093495236!2d-73.97397740474423!3d40.77287778968775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588d789a1e89%3A0xfb4165edf94e2390!2z0JHQvtGDINCR0YDQuNC00LY!5e0!3m2!1sru!2sru!4v1614114125498!5m2!1sru!2sru"
+                width="943" height="442" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- modal_successfully -->
+    <section class="modal_success">
+        <h2 class='visually-hidden'>Моадльное окно добавления товара в корзину</h2>
+        <button class='modal_close'>Close</button>
+        <div class="modal_container">
+            <div class="modal_succes_inner">
+                <img src="/img/icon-mark.svg" alt="" width='66' height='66'>
+                <p class='modal_succes_text'>Товар добавлен в коризну!</p>
+
+            </div>
+        </div>
+
+        <div class="modal_field_succes_btn">
+            <button class='modal_succes_btn btn'>Оформить заказ</button>
+            <button class='modal_succes_btn modal_succes_btn_white btn'>Продолжить покупки</button>
+        </div>
+    </section>
 
     <script src='js/app.js'></script>
+
 
 </body>
 
