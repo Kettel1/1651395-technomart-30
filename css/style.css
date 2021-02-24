@@ -251,7 +251,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header_inner_border {
@@ -264,12 +263,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header_inner_block {
     position: relative;
+    margin-top: 5px;
 }
 
 .header_inner_block:nth-child(2) {
     text-align: center;
     margin-left: 30px;
-    margin-top: 4px;
 }
 
 .header_about_btn {
@@ -370,7 +369,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     padding: 21px 0px;
     margin: 0px;
-    margin-top: 40px;
+    margin-top: 4px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
