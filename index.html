@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content='width=940'>
+    <!-- <meta name="viewport" content='width=960'> -->
     <meta name="description" content="Техномарт магазин техники">
     <title>HTML Academy: Техномарт</title>
     <link rel='stylesheet' href='css/normalize.css'>
@@ -47,10 +47,9 @@
                         </form>
                     </div>
 
-                    <a href='#' class='header_link'>
-                        <p class='header_text bookmark'>Закладки:
-                            <span>0</span>
-                        </p>
+                    <a href='#' class='header_link header_text bookmark'>
+                        Закладки: 0
+
                     </a>
 
                     <a href='#' class='header_link'>
@@ -60,8 +59,8 @@
                     <a href='#' class='header_link header_text order'>Оформить заказ</a>
 
                 </div>
-            </div> <!-- container -->
-        </section> <!-- header_container_color -->
+            </div>
+        </section>
 
 
         <section class='header_about'>
@@ -101,7 +100,7 @@
             <div class='container'>
                 <ul class='header_nav_list'>
                     <li class='header_nav_item'>
-                        <a href='#' class='header_nav_link'>Главная</a>
+                        <a href='#' class='header_nav_link header_nav_link--pd1'>Главная</a>
                     </li>
                     <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Компания</a>
@@ -110,13 +109,16 @@
                         <a href='catalog.html' class='header_nav_link'>Каталог</a>
                     </li>
                     <li class='header_nav_item'>
+                        <a href='#' class='header_nav_link'>Новости</a>
+                    </li>
+                    <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Спецпредложения</a>
                     </li>
                     <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Доставка</a>
                     </li>
                     <li class='header_nav_item'>
-                        <a href='#' class='header_nav_link'>Контакты</a>
+                        <a href='#' class='header_nav_link header_nav_link--pd7'>Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -124,7 +126,7 @@
     </header>
 
 
-    <!-- Features -->
+
     <main>
         <section class='features'>
             <h2 class='visually-hidden'>Преимущества</h2>
@@ -150,17 +152,17 @@
                     </article>
 
                     <div class='feat-grid4'>
-                        <article class='features_inner_slider slider-1' hidden>
+                        <article class='features_inner_slider slider-1'>
                             <h3 class='features_perforator_title'>Перфораторы</h3>
                             <p class='features_perforator_subtitle'>Настоящие мужские игрушки</p>
                             <a href="catalog.html" class='btn'>Открыть каталог</a>
                         </article>
 
-                        <!-- <article class='features_inner_slider slider-2'>
+                        <article class='features_inner_slider slider-2'>
                             <h3 class='features_perforator_title'>Дрели</h3>
                             <p class='features_perforator_subtitle'>Соседям на радость!</p>
                             <a href="catalog.html" class='btn'>Открыть каталог</a>
-                        </article> -->
+                        </article>
                     </div>
 
                     <article class='features_inner discount feat-grid5'>
@@ -179,7 +181,7 @@
         </section>
 
 
-        <!-- Product -->
+
         <section class='product'>
             <h2 class='visually-hidden'>Товар</h2>
             <div class="container">
@@ -188,88 +190,85 @@
                     <a href='#' class='btn'>Все популярные товары</a>
                 </div>
 
-                <div class='product_features'>
-                    <ul class='product_features_list'>
-
-                        <li class='product_features_item'>
-                            <article class='product_features_inner'>
-                                <div class='product_action'>
-                                    <a href="#" class='add-to-cart button-add'>
-                                        Купить
-                                    </a>
-                                    <a href="#" class='add-to-bookmark'>В закладки</a>
-                                </div>
-                                <a href='#' class='product_features_link'>
-                                    <img class='product_features_photo' src='img/perforator-bfg-9000.jpg' width='184'
-                                        height='164' alt='Перфоратор BFG 9000'>
+                <ul class='product_features_list'>
+                    <li class='product_features_item'>
+                        <article class='product_features_inner'>
+                            <div class='product_action'>
+                                <a href="#" class='add-to-cart button-add'>
+                                    Купить
                                 </a>
-                                <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 9000</h3>
-                                <p class='product_features_oldprice'>32500 Р.</p>
-                                <button class='proudct_features_btn'>22500Р.</button>
+                                <a href="#" class='add-to-bookmark'>В закладки</a>
+                            </div>
+                            <a href='#' class='product_features_link'>
+                                <img class='product_features_photo' src='img/perforator-bfg-9000.jpg' width='184'
+                                    height='164' alt='Перфоратор BFG 9000'>
+                            </a>
+                            <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 9000</h3>
+                            <p class='product_features_oldprice'>32500 Р.</p>
+                            <button class='proudct_features_btn'>22500Р.</button>
 
-                            </article>
-                        </li>
+                        </article>
+                    </li>
 
-                        <li class='product_features_item'>
-                            <article class='product_features_inner'>
-                                <div class='product_action'>
-                                    <a href="#" class='add-to-cart button-add'>
-                                        Купить
-                                    </a>
-                                    <a href="#" class='add-to-bookmark'>В закладки</a>
-                                </div>
-                                <a href='#' class='product_features_link'>
-                                    <img class='product_features_photo' src='img/perforator-bfg-3000-2000.jpg'
-                                        width='127' height='112' alt='Перфортаор BFG 3000'>
+                    <li class='product_features_item'>
+                        <article class='product_features_inner'>
+                            <div class='product_action'>
+                                <a href="#" class='add-to-cart button-add'>
+                                    Купить
                                 </a>
-                                <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 3000</h3>
-                                <p class='product_features_oldprice'>22500 Р.</p>
-                                <button class='proudct_features_btn'>15500 Р.</button>
-                                <p class='new_product'>New</p>
-                            </article>
-                        </li>
+                                <a href="#" class='add-to-bookmark'>В закладки</a>
+                            </div>
+                            <a href='#' class='product_features_link'>
+                                <img class='product_features_photo' src='img/perforator-bfg-3000-2000.jpg' width='127'
+                                    height='112' alt='Перфортаор BFG 3000'>
+                            </a>
+                            <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 3000</h3>
+                            <p class='product_features_oldprice'>22500 Р.</p>
+                            <button class='proudct_features_btn'>15500 Р.</button>
+                            <p class='new_product'>New</p>
+                        </article>
+                    </li>
 
-                        <li class='product_features_item'>
-                            <article class='product_features_inner'>
-                                <div class='product_action'>
-                                    <a href="#" class='add-to-cart button-add'>
-                                        Купить</a>
-                                    <a href="#" class='add-to-bookmark'>В закладки</a>
-                                </div>
-                                <a href='#' class='product_features_link'>
-                                    <img class='product_features_photo' src='img/perforator-bfg-6000.jpg' width='144'
-                                        height='128' alt='Перфоратор BFG 6000'>
-                                </a>
-                                <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 6000</h3>
-                                <p class='product_features_oldprice'>30500 Р.</p>
-                                <button class='proudct_features_btn'>25500 Р.</button>
-                            </article>
-                        </li>
+                    <li class='product_features_item'>
+                        <article class='product_features_inner'>
+                            <div class='product_action'>
+                                <a href="#" class='add-to-cart button-add'>
+                                    Купить</a>
+                                <a href="#" class='add-to-bookmark'>В закладки</a>
+                            </div>
+                            <a href='#' class='product_features_link'>
+                                <img class='product_features_photo' src='img/perforator-bfg-6000.jpg' width='144'
+                                    height='128' alt='Перфоратор BFG 6000'>
+                            </a>
+                            <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 6000</h3>
+                            <p class='product_features_oldprice'>30500 Р.</p>
+                            <button class='proudct_features_btn'>25500 Р.</button>
+                        </article>
+                    </li>
 
-                        <li class='product_features_item'>
-                            <article class='product_features_inner'>
-                                <div class='product_action'>
-                                    <a href="#" class='add-to-cart button-add'>
-                                        Купить</a>
-                                    <a href="#" class='add-to-bookmark'>В закладки</a>
-                                </div>
-                                <a href='#' class='product_features_link'>
-                                    <img class='product_features_photo' src='img/perforator-bfg-3000-2000.jpg'
-                                        width='127' height='112' alt='Перфортаор BFG 2000'>
-                                </a>
-                                <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 2000</h3>
-                                <p class='product_features_oldprice'>22500 Р.</p>
-                                <button class='proudct_features_btn'>12500 Р.</button>
-                                <p class='new_product'>New</p>
-                            </article>
-                        </li>
-                    </ul>
-                </div>
+                    <li class='product_features_item'>
+                        <article class='product_features_inner'>
+                            <div class='product_action'>
+                                <a href="#" class='add-to-cart button-add'>
+                                    Купить</a>
+                                <a href="#" class='add-to-bookmark'>В закладки</a>
+                            </div>
+                            <a href='#' class='product_features_link'>
+                                <img class='product_features_photo' src='img/perforator-bfg-3000-2000.jpg' width='127'
+                                    height='112' alt='Перфортаор BFG 2000'>
+                            </a>
+                            <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 2000</h3>
+                            <p class='product_features_oldprice'>22500 Р.</p>
+                            <button class='proudct_features_btn'>12500 Р.</button>
+                            <p class='new_product'>New</p>
+                        </article>
+                    </li>
+                </ul>
             </div>
         </section>
 
 
-        <!-- Manufacturers -->
+
 
         <section class='manufacturers'>
             <div class="container">
@@ -327,11 +326,11 @@
                         </a>
                     </li>
                 </ul>
-            </div> <!-- container  -->
+            </div>
         </section>
 
 
-        <!-- Services -->
+
 
         <section class='services'>
             <div class='container'>
@@ -384,13 +383,13 @@
                         <button class='credit-btn btn'>Отправить заявку</button>
                     </div>
 
-                </div> <!-- services_inner  -->
-            </div> <!-- container  -->
-        </section> <!-- services -->
+                </div> 
+            </div> 
+        </section> 
 
 
 
-        <!-- About -->
+
         <section class='about'>
             <div class='container'>
                 <div class="about_wrapper">
@@ -404,7 +403,7 @@
                             равнодушными любителей сэкономить на гастарбайтерах.
                         </p>
                         <p class='about_inner__subtitle about__subtitle'>
-                            Мы можем доставить ваш товар в самые отдаленные точки России!
+                            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                             Техномарт работает со многими транспортными компаниями:
                         </p>
 
@@ -432,8 +431,8 @@
                         </a>
                         <a href="blank.html" class='btn open-about'>Заблудились? Напишите нам!</a>
                     </div>
-                </div> <!-- about_wrapper -->
-            </div> <!-- container  -->
+                </div>
+            </div>
         </section>
     </main>
 
@@ -483,15 +482,15 @@
                             <a href='#' class='footer_link_secondary'>Техника</a>
                         </li>
                         <li class='footer_item_secondary'>
-                            <a href='#' class='footer_link_secondary'>Инструменты</a>
+                            <a href='#' class='footer_link_secondary'>Инструмент</a>
                         </li>
                         <li class='footer_item_secondary'>
                             <a href='#' class='footer_link_secondary'>Спецпредложения</a>
                         </li>
                     </ul>
                 </div>
-            </div> <!-- container  -->
-        </section> <!-- footer_inner  -->
+            </div>
+        </section>
 
         <section class='footer_inner_secondary'>
             <h2 class='visually-hidden'>Второй подвал сайта</h2>
@@ -556,7 +555,7 @@
         </section>
     </footer>
 
-    <!-- Modal about -->
+
 
     <section class="modal_about">
         <h2 class='visually-hidden'>Модальное окно обратной связи</h2>
@@ -593,7 +592,7 @@
     </section>
 
 
-    <!-- Modal map -->
+
     <section class='modal_map'>
         <div class='modal_close'></div>
         <div>
@@ -605,7 +604,7 @@
     </section>
 
 
-    <!-- modal_successfully -->
+
     <section class="modal_success">
         <h2 class='visually-hidden'>Моадльное окно добавления товара в корзину</h2>
         <button class='modal_close'>Close</button>

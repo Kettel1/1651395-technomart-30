@@ -48,14 +48,14 @@
 
 
                     <a href='#' class='header_link'>
-                        <p class='header_text bookmark'>Закладки:
+                        <p class='header_text bookmark_active'>Закладки:
                             <span>0</span>
                         </p>
                     </a>
 
 
                     <a href='#' class='header_link'>
-                        <p class='header_text cart'>Корзина: <span>0</span></p>
+                        <p class='header_text cart_active'>Корзина: <span>10</span></p>
                     </a>
 
 
@@ -74,7 +74,7 @@
                             для
                             ремнота</p>
                     </div>
-                    <div class='header_inner_block'>
+                    <div class='header_inner_block__catalog'>
                         <p class='header_inner_border'>
                             <a href='tel:+78125550555' class='header_inner_phone'>+7(812)555-05-55</a>
                         </p>
@@ -114,7 +114,7 @@
             <div class='container'>
                 <ul class='header_nav_list'>
                     <li class='header_nav_item'>
-                        <a href='index.html' class='header_nav_link'>Главная</a>
+                        <a href='index.html' class='header_nav_link header_nav_link--pd1'>Главная</a>
                     </li>
                     <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Компания</a>
@@ -123,13 +123,16 @@
                         <a href='#' class='header_nav_link'>Каталог</a>
                     </li>
                     <li class='header_nav_item'>
+                        <a href='#' class='header_nav_link'>Новости</a>
+                    </li>
+                    <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Спецпредложения</a>
                     </li>
                     <li class='header_nav_item'>
                         <a href='#' class='header_nav_link'>Доставка</a>
                     </li>
                     <li class='header_nav_item'>
-                        <a href='#' class='header_nav_link'>Контакты</a>
+                        <a href='#' class='header_nav_link header_nav_link--pd7'>Контакты</a>
                     </li>
                 </ul>
             </div> <!-- container -->
@@ -260,12 +263,10 @@
                                                 name="Battery">
                                             <label class='filter_battery_name' for='2.2'>Сетевые</label>
                                         </li>
-
                                     </ul>
-
                                 </fieldset>
+                                <button type="submit" class='filter_btn'>Показать</button>
                             </section>
-                            <button type="submit" class='filter_btn'>Показать</button>
                         </form>
                     </aside>
 
@@ -373,8 +374,8 @@
                                             width='144' height='128' alt='Перфоратор BFG 6000'>
                                     </a>
                                     <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 3000</h3>
-                                    <button class='proudct_features_btn'>15500 Р.</button>
                                     <p class='product_features_oldprice'>22500 Р.</p>
+                                    <button class='proudct_features_btn'>15500 Р.</button>
                                     <p class='new_product'>New</p>
                                 </article>
                             </li>
@@ -428,8 +429,8 @@
                                             width='144' height='128' alt='Перфоратор BFG 6000'>
                                     </a>
                                     <h3 class='product_features_name'>Перфоратор BOSCH<br>BFG 3000</h3>
-                                    <button class='proudct_features_btn'>15500 Р.</button>
                                     <p class='product_features_oldprice'>22500 Р.</p>
+                                    <button class='proudct_features_btn'>15500 Р.</button>
                                     <p class='new_product'>New</p>
                                 </article>
                             </li>
@@ -483,7 +484,7 @@
                                     <a href='#' class='page_link'>3</a>
                                 </li>
                                 <li class='page_item'>
-                                    <a href='#' class='page_link'>Следующая</a>
+                                    <a href='#' class='page_link page_link__next'>Следующая</a>
                                 </li>
                             </ul>
                         </div>
@@ -563,7 +564,7 @@
                             <a href='#' class='footer_link_secondary'>Техника</a>
                         </li>
                         <li class='footer_item_secondary'>
-                            <a href='#' class='footer_link_secondary'>Инструменты</a>
+                            <a href='#' class='footer_link_secondary'>Инструмент</a>
                         </li>
                         <li class='footer_item_secondary'>
                             <a href='#' class='footer_link_secondary'>Спецпредложения</a>
