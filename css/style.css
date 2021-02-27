@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Cuprum', sans-serif ;
+    font-family: 'Cuprum','Arial', sans-serif;
     font-style: normal;
     font-size: 16px;
     width: 100%;
@@ -899,7 +899,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     position: relative;
     margin-top: auto;
     margin-bottom: 17px;
@@ -967,7 +967,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .sevices_content__subtitle {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -1063,7 +1063,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .services_content_subtitle {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     font-size: 13px;
     line-height: 24px;
     margin-top: 29px;
@@ -1093,7 +1093,7 @@ h1, h2, h3, h4, h5, h6, p {
 .about__subtitle {
     font-size: 13px;
     line-height: 24px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Cuprum", sans-serif;
     max-width: 460px;
     margin-top: 24px;
 }
