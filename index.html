@@ -8,13 +8,11 @@
     <title>HTML Academy: Техномарт</title>
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' href='css/style.min.css'>
-    <meta name="Keywords" content="HTML, META, метатег, тег, поисковая система">
+    <meta name="Keywords" content="Магазин техники">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
 
     <!-- Icons -->
@@ -67,7 +65,7 @@
             <h2 class='visually-hidden'>Описание, адрес, личный кабинет</h2>
             <div class='container'>
                 <div class='header_inner'>
-                    <div class='header_inner_block'>
+                    <div class='header_inner_block header_inner_first-element'>
                         <p class='header_inner_text'>Интернет-магазин<br>строительных материалов<br>и инструментов
                             для
                             ремнота</p>
@@ -125,8 +123,6 @@
         </nav>
     </header>
 
-
-
     <main>
         <section class='features'>
             <h2 class='visually-hidden'>Преимущества</h2>
@@ -156,12 +152,28 @@
                             <h3 class='features_perforator_title'>Перфораторы</h3>
                             <p class='features_perforator_subtitle'>Настоящие мужские игрушки</p>
                             <a href="catalog.html" class='btn'>Открыть каталог</a>
+                            <ul class='slider_list'>
+                                <li>
+                                    <button class='slider_dots'>1</button>
+                                </li>
+                                <li>
+                                    <button class='slider_dots slider_dots_active'>2</button>
+                                </li>
+                            </ul>
                         </article>
 
                         <article class='features_inner_slider slider-2'>
                             <h3 class='features_perforator_title'>Дрели</h3>
                             <p class='features_perforator_subtitle'>Соседям на радость!</p>
                             <a href="catalog.html" class='btn'>Открыть каталог</a>
+                            <ul class='slider_list'>
+                                <li>
+                                    <button class='slider_dots'>1</button>
+                                </li>
+                                <li>
+                                    <button class='slider_dots slider_dots_active'>2</button>
+                                </li>
+                            </ul>
                         </article>
                     </div>
 
@@ -383,9 +395,9 @@
                         <button class='credit-btn btn'>Отправить заявку</button>
                     </div>
 
-                </div> 
-            </div> 
-        </section> 
+                </div>
+            </div>
+        </section>
 
 
 
@@ -395,27 +407,27 @@
                 <div class="about_wrapper">
                     <div class='about_inner'>
                         <h2 class='about_inner__title about__title'>Компания «Техномарт»</h2>
-                        <p class='about_inner__subtitle about__subtitle'>
+                        <p class='about__subtitle'>
                             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
                             строительства
                             не
                             оставит
                             равнодушными любителей сэкономить на гастарбайтерах.
                         </p>
-                        <p class='about_inner__subtitle about__subtitle'>
+                        <p class='about__subtitle about__subtitle_secondary-element'>
                             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                             Техномарт работает со многими транспортными компаниями:
                         </p>
 
                         <ul class='about_inner__list'>
                             <li class='about_inner__item'>
-                                <p class='about_inner__text'>Деловые Линии</p>
+                                <p class='about_inner__text about_inner_first-element about-line'>Деловые Линии</p>
                             </li>
                             <li class='about_inner__item'>
-                                <p class='about_inner__text'>Автотрейдинг</p>
+                                <p class='about_inner__text about_inner_secondary-element about-line'>Автотрейдинг</p>
                             </li>
                             <li class='about_inner__item'>
-                                <p class='about_inner__text'>ЖелДорЭкспедиция</p>
+                                <p class='about_inner__text about_inner_third-element about-line'>ЖелДорЭкспедиция</p>
                             </li>
                         </ul>
 
@@ -558,10 +570,11 @@
 
 
     <section class="modal_about">
-        <h2 class='visually-hidden'>Модальное окно обратной связи</h2>
-        <button class='modal_close'>Close</button>
-        <div class="modal_container">
-            <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class='visually-hidden'>Модальное окно обратной связи</h2>
+            <button class='modal_close'>Close</button>
+            <div class="modal_container">
+
                 <div class="modal_inner">
                     <div class="modal_name">
                         <label class="modal_title">Ваше имя:
@@ -583,15 +596,17 @@
                             id='id'></textarea>
                     </label>
                 </div>
-        </div>
+            </div>
 
-        <div class="modal_field_btn">
-            <button class='modal_btn btn'>Отправить</button>
-        </div>
+
+            <div class="modal_field_btn">
+                <button class='modal_btn btn'>Отправить</button>
+            </div>
         </form>
     </section>
 
     <section class='modal_map'>
+        <h2 class='visually-hidden'>Модальное окно месторасположения офиса</h2>
         <div class='modal_close'></div>
         <div>
             <iframe
@@ -606,7 +621,7 @@
         <button class='modal_close'>Close</button>
         <div class="modal_container">
             <div class="modal_succes_inner">
-                <img src="/img/icon-mark.svg" alt="" width='66' height='66'>
+                <img src="/img/icon-mark.svg" alt="Успешно" width='66' height='66'>
                 <p class='modal_succes_text'>Товар добавлен в коризну!</p>
 
             </div>
